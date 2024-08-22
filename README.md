@@ -1,2 +1,1 @@
-# dev-setup
-Developer environment for SW1OPRG-01
+# 0x00 Exercises
