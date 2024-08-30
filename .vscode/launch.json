@@ -36,7 +36,7 @@
       "environment": [],
       "externalConsole": false,
       "MIMode": "gdb",
-      "preLaunchTask": "build_execise_4",
+      "preLaunchTask": "build_exercise_4",
     }
   ]
 }

@@ -36,6 +36,7 @@
       "args": [
         "-g",
         "${workspaceFolder}/src/exercise_4.cpp",
+        "${workspaceFolder}/src/geometrics.cpp", 
         "-o",
         "${workspaceFolder}/build/exercise_4.out"
       ],
