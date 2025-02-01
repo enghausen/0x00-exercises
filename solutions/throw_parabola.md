@@ -57,16 +57,53 @@ $$
 To compute the vertical height **y** at a given horizontal position **x**, we implemented the function:
 
 ### **3.1 Equation Used in the Function**
+The equation used to calculate the vertical position \( y \) of a projectile at a given horizontal distance \( x \) is:
+
 $$
 y = x \tan(α) - \frac{g x^2}{2 v₀^2 \cos^2(α)}
 $$
 
-where:
+#### **Derivation of the Equation for Vertical Height `y`**
+To find the vertical position \( y \) at a given horizontal position \( x \), we use the fundamental equations of projectile motion.
+
+#### **Step 1: Position Equations for Motion**
+The general motion equations for horizontal and vertical positions as functions of time \( t \) are:
+
+$$
+x = v_0 \cos(α) t
+$$
+
+$$
+y = v_0 \sin(α) t - \frac{1}{2} g t^2
+$$
+
+#### **Step 2: Express Time `t` in Terms of `x`**
+Rearranging the horizontal position equation for \( t \):
+
+$$
+t = \frac{x}{v_0 \cos(α)}
+$$
+
+#### **Step 3: Substitute `t` into the Vertical Position Equation**
+Replacing \( t \) in the vertical position equation:
+
+$$
+y = v_0 \sin(α) \left(\frac{x}{v_0 \cos(α)}\right) - \frac{1}{2} g \left(\frac{x}{v_0 \cos(α)}\right)^2
+$$
+
+#### **Step 4: Simplify the Equation**
+$$
+y = x \tan(α) - \frac{g x^2}{2 v_0^2 \cos^2(α)}
+$$
+
+This final equation describes the vertical position \( y \) at a given horizontal distance \( x \), given:
 - \( x \) = horizontal distance (meters)
 - \( y \) = vertical height (meters)
 - \( α \) = launch angle (degrees)
-- \( g = 9.82 \) m/s² (gravity)
+- \( g \) = 9.82  m/s² (gravity)
 - \( v₀ \) = initial velocity (m/s)
+
+This formula is implemented in our C++ function `calculateVerticalDistance()` to determine projectile motion height at a given `x`.
 
 ---
 
